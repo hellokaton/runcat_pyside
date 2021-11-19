@@ -19,9 +19,28 @@ A cute running cat animation on your windows taskbar.
 
 You only have to run the RunCat.exe.
 
-# Installation
+# Run
 
 ```bash
 pip install -r requirements.txt
+
+python run_cat.py
+```
+
+# Packaging
+
+```bash
+pip install pyinstaller
+```
+
+For Windows
+
+```bash
 pyinstaller --clean -Fw -i runcat.ico --add-data "resources;./resources" run_cat.py
+```
+
+For macOS
+
+```bash
+pyinstaller --clean -Fw -i runcat.ico --add-data "resources:./resources" run_cat.py
 ```
